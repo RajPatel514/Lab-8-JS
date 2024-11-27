@@ -41,4 +41,7 @@ let copiedObj = { ...student };
 let newProperty = { ...student, gradYear: 2026, enrollYear: 2024 };
 console.log(newProperty);
 
+let newCourses = ["C++", "Python", "Javascript 3D"];
+let mergeObj = [...student.courses, ...newCourses];
+console.log(mergeObj);
 
