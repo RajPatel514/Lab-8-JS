@@ -14,9 +14,19 @@ let student = {
 
 student.studentInfo();
 
-//Part 2
+//PART 2
 let jsonString = JSON.stringify(student);
 console.log(jsonString);
 
 let jsonObj = JSON.parse(jsonString);
 console.log(jsonObj);
+
+//PART 3
+
+let { name, age, isEnrolled, courses } = student;
+console.log(name);
+console.log(courses);
+
+
+
+
