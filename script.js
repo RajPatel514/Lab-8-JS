@@ -3,12 +3,12 @@
 console.log("PART 1 - Understanding and Creating Objects")
 
 let student = {
-    name: "Raj Patel",
+    fullName: "Raj Patel",
     age: 31,
     isEnrolled: true,
     courses: ["SQL", "Web Design", "JavaScript", "Operating Systems"],
     studentInfo: function () {
-        console.log(student.name);  //bracket notation
+        console.log(student.fullName);  //bracket notation
         console.log(this.age);      //dot notation
         console.log(this.isEnrolled);
         console.log(this.courses);
@@ -21,7 +21,7 @@ let student = {
     }
 };
 
-console.log(student.name);
+console.log(student.fullName);
 console.log(student.age);
 
 console.log("\n"); //Added line break for clarity
@@ -41,8 +41,8 @@ console.log(jsonObj);
 console.log("\nPART 3 - Using Destructuring Assignment")
 
 
-let { name, age, isEnrolled, courses } = student;
-console.log(name);
+let { fullName, age, isEnrolled, courses } = student;
+console.log(fullName);
 console.log(courses);
 
 let scores = [25, 50, 75, 100];
