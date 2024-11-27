@@ -43,7 +43,7 @@ let student = {
 // console.log(name);
 // console.log(courses);
 
-// let scores = [25, 50, 75, 100];
+let scores = [25, 50, 75, 100];
 // let [first, dog] = scores;
 
 // console.log(first);
@@ -69,4 +69,7 @@ student.addCourse("PHP");
 console.log(student.totalNumCourse());
 
 
+//BONUS TASK
 
+let sumScores = scores.reduce((accumulator, currentValue) => accumulator + currentValue);
+console.log(sumScores / scores.length); //Average from Scores array
