@@ -12,15 +12,12 @@ let student = {
         console.log(this.age);      //dot notation
         console.log(this.isEnrolled);
         console.log(this.courses);
-
     },
     addCourse: function (courseName) {
         this.courses.push(courseName);
     },
-
     totalNumCourse: function () {
         return this.courses.length;
-
     }
 };
 

@@ -1,0 +1,11 @@
+html {
+  height: 100%;
+}
+body {
+  background-image: linear-gradient(to bottom, #282828, #878787);
+}
+
+h1 {
+  color: #fcffe0;
+  text-align: center;
+}
