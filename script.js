@@ -1,5 +1,6 @@
 //Lab 8
-//PART 1
+//////Part 1
+console.log("PART 1 - Understanding and Creating Objects")
 
 let student = {
     name: "Raj Patel",
@@ -23,53 +24,60 @@ let student = {
     }
 };
 
-// console.log(student.name);
-// console.log(student.age);
+console.log(student.name);
+console.log(student.age);
 
-// console.log("\n"); //Added line break for clarity
+console.log("\n"); //Added line break for clarity
 
-// student.studentInfo();
+student.studentInfo();
 
-// //PART 2
-// let jsonString = JSON.stringify(student);
-// console.log(jsonString);
+//////PART 2
+console.log("\nPART 2 - Working with JSON")
 
-// let jsonObj = JSON.parse(jsonString);
-// console.log(jsonObj);
+let jsonString = JSON.stringify(student);
+console.log(jsonString);
 
-// //PART 3
+let jsonObj = JSON.parse(jsonString);
+console.log(jsonObj);
 
-// let { name, age, isEnrolled, courses } = student;
-// console.log(name);
-// console.log(courses);
+//////PART 3
+console.log("\nPART 3 - Using Destructuring Assignment")
+
+
+let { name, age, isEnrolled, courses } = student;
+console.log(name);
+console.log(courses);
 
 let scores = [25, 50, 75, 100];
-// let [first, dog] = scores;
+let [first, dog] = scores;
 
-// console.log(first);
-// console.log(dog);
+console.log(first);
+console.log(dog);
 
 
-// // Part 4
+////// Part 4
+console.log("\nPART 4 - The Spread Operator")
 
-// let copiedObj = { ...student };
+let copiedObj = { ...student };
 
-// let newProperty = { ...student, gradYear: 2026, enrollYear: 2024 };
-// console.log(newProperty);
+let newProperty = { ...student, gradYear: 2026, enrollYear: 2024 };
+console.log(newProperty);
 
-// let newCourses = ["C++", "Python", "Javascript 3D"];
-// let mergeObj = [...student.courses, ...newCourses];
-// console.log(mergeObj);
+let newCourses = ["C++", "Python", "Javascript 3D"];
+let mergeObj = [...student.courses, ...newCourses];
+console.log(mergeObj);
 
-//PART 5
+//////PART 5
+console.log("\nPART 5 - Object Methods")
 //Modified student object to add new courses
 student.addCourse("PHP");
-// console.log(student.courses)
+console.log(student.courses)
 
 console.log(student.totalNumCourse());
 
 
-//BONUS TASK
+//////BONUS TASK
+console.log("\nBonus Task - Reduce Method")
 
 let sumScores = scores.reduce((accumulator, currentValue) => accumulator + currentValue);
 console.log(sumScores / scores.length); //Average from Scores array
