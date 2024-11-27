@@ -34,5 +34,8 @@ console.log(first);
 console.log(dog);
 
 
+// Part 4
+
+let copiedObj = { ...student };
 
 
