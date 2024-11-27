@@ -27,6 +27,12 @@ let { name, age, isEnrolled, courses } = student;
 console.log(name);
 console.log(courses);
 
+let scores = [25, 50, 75, 100];
+let [first, dog] = scores;
+
+console.log(first);
+console.log(dog);
+
 
 
 
