@@ -13,3 +13,7 @@ let student = {
 };
 
 student.studentInfo();
+
+//Part 2
+let jsonString = JSON.stringify(student);
+console.log(jsonString);
