@@ -12,6 +12,9 @@ let student = {
         console.log(this.isEnrolled);
         console.log(this.courses);
 
+    },
+    addCourse: function (courseName) {
+        this.courses.push(courseName);
     }
 };
 
@@ -54,4 +57,7 @@ student.studentInfo();
 // console.log(mergeObj);
 
 //PART 5
+//Modified student object to add new courses
+student.addCourse("PHP");
+console.log(student.courses)
 
