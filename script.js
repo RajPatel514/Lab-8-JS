@@ -9,10 +9,18 @@ let student = {
     studentInfo: function () {
         console.log(student.name);  //bracket notation
         console.log(this.age);      //dot notation
+        console.log(this.isEnrolled);
+        console.log(this.courses);
+
     }
 };
 
-// student.studentInfo();
+console.log(student.name);
+console.log(student.age);
+
+console.log("\n"); //Added line break for clarity
+
+student.studentInfo();
 
 // //PART 2
 // let jsonString = JSON.stringify(student);
@@ -34,14 +42,16 @@ let student = {
 // console.log(dog);
 
 
-// Part 4
+// // Part 4
 
-let copiedObj = { ...student };
+// let copiedObj = { ...student };
 
-let newProperty = { ...student, gradYear: 2026, enrollYear: 2024 };
-console.log(newProperty);
+// let newProperty = { ...student, gradYear: 2026, enrollYear: 2024 };
+// console.log(newProperty);
 
-let newCourses = ["C++", "Python", "Javascript 3D"];
-let mergeObj = [...student.courses, ...newCourses];
-console.log(mergeObj);
+// let newCourses = ["C++", "Python", "Javascript 3D"];
+// let mergeObj = [...student.courses, ...newCourses];
+// console.log(mergeObj);
+
+//PART 5
 
