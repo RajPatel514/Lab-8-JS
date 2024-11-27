@@ -15,15 +15,20 @@ let student = {
     },
     addCourse: function (courseName) {
         this.courses.push(courseName);
+    },
+
+    totalNumCourse: function () {
+        return this.courses.length;
+
     }
 };
 
-console.log(student.name);
-console.log(student.age);
+// console.log(student.name);
+// console.log(student.age);
 
-console.log("\n"); //Added line break for clarity
+// console.log("\n"); //Added line break for clarity
 
-student.studentInfo();
+// student.studentInfo();
 
 // //PART 2
 // let jsonString = JSON.stringify(student);
@@ -59,5 +64,9 @@ student.studentInfo();
 //PART 5
 //Modified student object to add new courses
 student.addCourse("PHP");
-console.log(student.courses)
+// console.log(student.courses)
+
+console.log(student.totalNumCourse());
+
+
 
