@@ -12,30 +12,33 @@ let student = {
     }
 };
 
-student.studentInfo();
+// student.studentInfo();
 
-//PART 2
-let jsonString = JSON.stringify(student);
-console.log(jsonString);
+// //PART 2
+// let jsonString = JSON.stringify(student);
+// console.log(jsonString);
 
-let jsonObj = JSON.parse(jsonString);
-console.log(jsonObj);
+// let jsonObj = JSON.parse(jsonString);
+// console.log(jsonObj);
 
-//PART 3
+// //PART 3
 
-let { name, age, isEnrolled, courses } = student;
-console.log(name);
-console.log(courses);
+// let { name, age, isEnrolled, courses } = student;
+// console.log(name);
+// console.log(courses);
 
-let scores = [25, 50, 75, 100];
-let [first, dog] = scores;
+// let scores = [25, 50, 75, 100];
+// let [first, dog] = scores;
 
-console.log(first);
-console.log(dog);
+// console.log(first);
+// console.log(dog);
 
 
 // Part 4
 
 let copiedObj = { ...student };
+
+let newProperty = { ...student, gradYear: 2026, enrollYear: 2024 };
+console.log(newProperty);
 
 
